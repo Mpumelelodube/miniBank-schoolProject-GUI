@@ -1,0 +1,196 @@
+
+.leftButtons{
+    -fx-background-color:transparent;
+    -fx-text-fill:white;
+    -fx-border-width:0 0 0.2 0;
+    -fx-border-color:white;
+
+
+}
+.leftButtons: hover{
+    -fx-background-color:white;
+    -fx-text-fill:#213ddd;
+    -fx-border-radius:0;
+    -fx-background-radius:0;
+    -fx-font-size:17px;
+}
+
+.textFields{
+    -fx-border-color:#213ddd;
+    -fx-border-width:0 0 1 0;
+    -fx-border-radius:0;
+    -fx-background-color:transparent;
+    -fx-prompt-text-fill:#213ddd;
+    -fx-text-fill:#213ddd;
+}
+
+.textFields: hover{
+    -fx-border-color:#213ddd;
+    -fx-border-width:0 0 3 0;
+    -fx-border-radius:0;
+    -fx-background-color:transparent;
+    -fx-font-size:17px;
+}
+
+.textFields: focused{
+    -fx-border-color:#53f5dd;
+    -fx-border-width:0 0 3 0;
+    -fx-border-radius:0;
+    -fx-background-color:transparent;
+    -fx-prompt-text-fill:#53f5dd;
+    -fx-text-fill:#53f5dd;
+    -fx-font-size:17px;
+}
+
+.regFields{
+   -fx-border-color:#213ddd;
+       -fx-border-width:0 0 1 0;
+       -fx-border-radius:0;
+       -fx-background-color:transparent;
+       -fx-prompt-text-fill:#213ddd;
+}
+
+.regFields: hover{
+    -fx-border-color:#213ddd;
+    -fx-border-width:0 0 2 0;
+    -fx-border-radius:0;
+    -fx-background-color:transparent;
+}
+.regFields: focused{
+    -fx-border-color:#53f5dd;
+    -fx-border-width:0 0 2 0;
+    -fx-border-radius:0;
+    -fx-background-color:transparent;
+    -fx-prompt-text-fill:#53f5dd;
+    -fx-text-fill:#53f5dd;
+}
+.buttons{
+    -fx-background-color:#213ddd;
+    -fx-background-radius:0;
+        -fx-text-fill:white;
+        -fx-border-width:0 0 0 0;
+        -fx-border-color:#213ddd;
+}
+
+.buttons: hover{
+    -fx-background-color:white;
+    -fx-background-radius:0;
+        -fx-text-fill:#213ddd;
+        -fx-border-width:1 1 1 1;
+        -fx-border-color:#53f5dd;
+            -fx-font-size:17px;
+}
+
+.comboBox{
+    -fx-background-color:white;
+    -fx-text-fill:#213ddd;
+    -fx-border-width:1 1 1 1;
+    -fx-background-radius:0;
+    -fx-border-color:#213ddd;
+}
+
+.comboBox: hover{
+    -fx-background-color:white;
+    -fx-text-fill:#213ddd;
+    -fx-border-width:1 1 1 1;
+    -fx-background-radius:0;
+    -fx-border-color:#53f5dd;
+    -fx-prompt-text-fill:#213ddd;
+
+}
+
+.comboBox: focused{
+    -fx-background-color:white;
+    -fx-text-fill:#213ddd;
+    -fx-border-width:1 1 1 1;
+    -fx-background-radius:0;
+    -fx-border-color:#53f5dd;
+    -fx-prompt-text-fill:#213ddd;
+
+}
+
+.l{
+        -fx-background-color:white;
+    -fx-text-fill:#213ddd;
+    -fx-alignment:left;
+
+}
+
+.table-view{
+ -fx-border-width:1 1 1 1;
+    -fx-border-color:#213ddd;
+}
+
+.table-view .column-header,.table-view .column-header .filter, .table-view .column-header-background .filter{
+    -fx-border:5px;
+        -fx-alignment:right;
+         -fx-background-color:white;
+         -fx-text-fill:#777b7e;
+
+
+
+}
+
+.table-view,column-header, .label{
+    -fx-text-fill:#213ddd;
+    -fx-alignment:left;
+}
+.table-cell{
+    -fx-background:black;
+        -fx-text-fill:#777b7e;
+        -fx-text-alignment:center;
+
+}
+
+.userLabel{
+    -fx-text-fill:white;
+}
+
+.column{
+    -fx-text-fill:#213ddd
+}
+
+.column: hover{
+    -fx-text-fill:#53f5dd;
+    -fx-font-size:17px;
+    -fx-border-color:#53f5dd;
+        -fx-border-width:0 0 2 0;
+}
+
+.panes{
+     -fx-background-color:white;
+     -fx-background-radius:0;
+}
+.panes:hover{
+  -fx-effect:dropshadow(two-pass-box ,#213ddd,30,0.0,0.1,3);
+
+}
+.panes:pressed{
+  -fx-background-color:#fffdd0;
+
+}
+
+.deactivationPane{
+     -fx-background-color:white;
+     -fx-background-radius:0;
+}
+.deactivationPane:hover{
+  -fx-effect:dropshadow(two-pass-box ,red,30,0.0,0.1,3);
+
+}
+#deactivationConfirm{
+    -fx-background-color:#213ddd;
+    -fx-background-radius:0;
+        -fx-text-fill:white;
+        -fx-border-width:0 0 0 0;
+        -fx-border-color:#213ddd;
+}
+
+#deactivationConfirm: hover{
+    -fx-background-color:red;
+    -fx-background-radius:0;
+        -fx-text-fill:white;
+        -fx-border-width:0 0 0 0;
+        -fx-border-color:#53f5dd;
+            -fx-font-size:17px;
+}

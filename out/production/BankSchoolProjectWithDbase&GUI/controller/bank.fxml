@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="462.0" prefWidth="731.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="227.0">
+               <children>
+                  <Pane fx:id="formPane" prefHeight="462.0" prefWidth="227.0" style="-fx-background-color: #213ddd;">
+                     <children>
+                        <ImageView fitHeight="462.0" fitWidth="227.0">
+                           <image>
+                              <Image url="@../icons/Untitled-11.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="2.0" layoutY="321.0" opacity="0.52" prefHeight="132.0" prefWidth="228.0" style="-fx-background-color: #213ddd;" />
+                        <Pane layoutX="2.0" layoutY="158.0" opacity="0.52" prefHeight="132.0" prefWidth="228.0" style="-fx-background-color: #213ddd;" />
+                        <VBox layoutX="-1.0" layoutY="157.0" prefHeight="139.0" prefWidth="227.0">
+                           <children>
+                              <Button fx:id="depositButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="227.0" styleClass="leftButtons" text="Make a deposit" textFill="#53f5dd">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="withdrawalButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="227.0" styleClass="leftButtons" text="Make a withdrawal" textFill="#53f5dd">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="transferButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="227.0" styleClass="leftButtons" text="Make a transfer" textFill="#53f5dd">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="bankStatementButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="62.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="227.0" styleClass="leftButtons" text="View bank statement" textFill="#53f5dd">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="deactivateButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="88.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="227.0" styleClass="leftButtons" text="Deactivate account" textFill="#53f5dd">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                           </children>
+                        </VBox>
+                        <Circle fill="WHITE" layoutX="113.0" layoutY="73.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="118.0" fitWidth="110.0" layoutX="58.0" layoutY="14.0">
+                           <image>
+                              <Image url="@../icons/icons8-user-male-512.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="-3.0" layoutY="323.0" prefHeight="99.0" prefWidth="72.0">
+                           <children>
+                              <Label styleClass="userLabel" text="Name" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" styleClass="userLabel" text="Surname" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="26.0" styleClass="userLabel" text="I.D" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" styleClass="userLabel" text="Account" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="73.0" styleClass="userLabel" text="Balance" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="73.0" layoutY="323.0" prefHeight="99.0" prefWidth="150.0">
+                           <children>
+                              <Label fx:id="name" styleClass="userLabel" text="name">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.09134615384615385">
+                                       <stops>
+                                          <Stop color="#cb99ff" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label fx:id="lastName" styleClass="userLabel" text="Surname">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.09134615384615385">
+                                       <stops>
+                                          <Stop color="#cb99ff" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label fx:id="id" styleClass="userLabel" text="I.D">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.09134615384615385">
+                                       <stops>
+                                          <Stop color="#cb99ff" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label fx:id="account" styleClass="userLabel" text="Account">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.09134615384615385">
+                                       <stops>
+                                          <Stop color="#cb99ff" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label fx:id="balanceLabel" layoutX="10.0" layoutY="73.0" styleClass="userLabel" text="Balance">
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.09134615384615385">
+                                       <stops>
+                                          <Stop color="#cb99ff" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="-1.0" layoutY="295.0" prefHeight="26.0" prefWidth="233.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text fill="#213ddd" layoutX="54.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Details" />
+                           </children>
+                        </Pane>
+                        <Separator layoutX="5.0" layoutY="156.0" prefWidth="215.0" style="-fx-background-color: white;" />
+                        <Button fx:id="logoutButton" alignment="TOP_LEFT" layoutX="-1.0" layoutY="422.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="227.0" styleClass="leftButtons" text="Logout" textFill="#53f5dd" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="planePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #213ddd;">
+                     <children>
+                        <ImageView fitHeight="462.0" fitWidth="227.0">
+                           <image>
+                              <Image url="@../icons/Untitled-11.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="462.0" prefWidth="509.0">
+               <children>
+                  <Pane fx:id="paneDashbord" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#213ddd" layoutX="70.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K  " wrappingWidth="367.05029296875">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Text>
+                        <Line endX="274.0" layoutX="153.0" layoutY="122.0" startX="-100.0" stroke="#213ddd" />
+                        <Line endX="274.0" layoutX="153.0" layoutY="69.0" startX="-100.0" stroke="#213ddd" />
+                        <Text fill="#213ddd" layoutX="240.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="paneDashboard" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#213ddd" layoutX="26.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K ">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Text>
+                        <Line endX="369.0" layoutX="119.0" layoutY="252.0" startX="-100.0" stroke="#213ddd" />
+                        <Line endX="369.0" layoutX="119.0" layoutY="188.0" startX="-100.0" stroke="#213ddd" />
+                        <Text fill="#213ddd" layoutX="311.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#213ddd" layoutX="136.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT AN OPTION FROM THE LEFT" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="depositPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane layoutX="63.0" layoutY="125.0" prefHeight="213.0" prefWidth="382.0" style="-fx-background-color: #fff;" styleClass="panes">
+                           <children>
+                              <TextField fx:id="depositAmountTextField" layoutX="14.0" layoutY="113.0" prefHeight="26.0" prefWidth="197.0" promptText="Enter amount" styleClass="textFields" />
+                              <PasswordField fx:id="depositPinVerification" layoutX="236.0" layoutY="113.0" prefHeight="26.0" prefWidth="102.0" promptText="pin" styleClass="textFields" />
+                              <Text fill="#213ddd" layoutX="93.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K " wrappingWidth="197.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="284.0" layoutX="6.0" layoutY="13.0" startX="76.0" stroke="#213ddd" />
+                              <Line endX="284.0" layoutX="6.0" layoutY="31.0" startX="76.0" stroke="#213ddd" />
+                              <Text fill="#213ddd" layoutX="183.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G " wrappingWidth="154.98828125">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#213ddd" layoutX="125.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D e p o s i t" wrappingWidth="132.00000000000006">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="232.0" layoutY="159.0" mnemonicParsing="false" onAction="#depositMoney" prefHeight="26.0" prefWidth="106.0" styleClass="buttons" text="Confirm" />
+                              <Button layoutX="14.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" styleClass="buttons" text="Cancel" />
+                           </children>
+                        </Pane>
+                     </children></Pane>
+                  <Pane fx:id="registerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#213ddd" layoutX="66.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K   A C C O U N T  R E G I S T R A T I O N " wrappingWidth="375.0" />
+                        <VBox layoutX="54.0" layoutY="77.0" prefHeight="341.0" prefWidth="178.0">
+                           <children>
+                              <TextField fx:id="firstName" promptText="First Name" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="middleName" layoutX="10.0" layoutY="10.0" promptText="Middle Name" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="regLastName" layoutX="10.0" layoutY="36.0" promptText="Last Name" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="nationalID" layoutX="10.0" layoutY="62.0" promptText="National Id" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Text fill="#213ddd" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Pane prefHeight="27.0" prefWidth="178.0">
+                                 <children>
+                                    <RadioButton fx:id="male" layoutX="8.0" layoutY="5.0" mnemonicParsing="false" selected="true" text="Male" textFill="#213ddd">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="gender" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="female" layoutX="89.0" layoutY="5.0" mnemonicParsing="false" text="Female" textFill="#213ddd" toggleGroup="$gender" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Pane>
+                              <PasswordField fx:id="pin" promptText="Enter a four digit pin" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </PasswordField>
+                              <PasswordField fx:id="pinVerification" layoutX="10.0" layoutY="257.0" promptText="Renter the four digit pin" styleClass="regFields" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="279.0" layoutY="77.0" prefHeight="341.0" prefWidth="160.0">
+                           <children>
+                              <DatePicker fx:id="dob" promptText="Date of Birth" styleClass="comboBox">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </DatePicker>
+                              <TextArea fx:id="address" prefHeight="55.0" prefWidth="160.0" promptText="Address" styleClass="comboBox">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                              <ComboBox fx:id="employment" prefWidth="150.0" promptText="Employment Status" styleClass="comboBox">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <Text fill="#213ddd" strokeType="OUTSIDE" strokeWidth="0.0" text="If Employed" />
+                              <TextField fx:id="employer" promptText="Employer" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="jobTitle" layoutX="10.0" layoutY="179.0" promptText="Job Title" styleClass="regFields">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextArea fx:id="recoveryPhrase" prefHeight="55.0" prefWidth="160.0" promptText="Account Recovery Phrase" styleClass="comboBox" />
+                           </children>
+                        </VBox>
+                        <Button layoutX="323.0" layoutY="422.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="116.0" styleClass="buttons" text="Register" />
+                        <Button fx:id="cancelRegistration" layoutX="54.0" layoutY="422.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="116.0" styleClass="buttons" text="Cancel Reg..." />
+                        <Line endX="300.0" layoutX="155.0" layoutY="46.0" startX="-110.0" stroke="#213ddd" />
+                        <Line endX="300.0" layoutX="155.0" layoutY="14.0" startX="-110.0" stroke="#213ddd" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="loginPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#213ddd" layoutX="123.0" layoutY="207.0" stroke="#213ddd" strokeType="OUTSIDE" strokeWidth="0.0" text="W E L C O M E" wrappingWidth="261.0">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#213ddd" layoutX="67.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T O  R E A P E R . T E K  B A N K " wrappingWidth="375.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="accountNumberField" layoutX="82.0" layoutY="291.0" prefHeight="26.0" prefWidth="160.0" promptText="Account numer/ user name" styleClass="textFields" />
+                        <Button layoutX="314.0" layoutY="358.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="90.0" styleClass="buttons" text="Login" />
+                        <Button fx:id="home" layoutX="209.0" layoutY="358.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="90.0" styleClass="buttons" text="HOME" />
+                        <PasswordField fx:id="pinField" layoutX="273.0" layoutY="291.0" prefWidth="131.0" promptText="Pin Number" styleClass="textFields" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="transferPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane layoutX="63.0" layoutY="79.0" prefHeight="320.0" prefWidth="382.0" style="-fx-background-color: #fff;" styleClass="panes">
+                           <children>
+                              <TextField fx:id="transferAmountTextField" layoutX="14.0" layoutY="113.0" prefHeight="26.0" prefWidth="155.0" promptText="Enter amount" styleClass="textFields" />
+                              <PasswordField fx:id="transferPinVerification" layoutX="14.0" layoutY="263.0" prefHeight="26.0" prefWidth="102.0" promptText="pin" styleClass="textFields" />
+                              <Text fill="#213ddd" layoutX="93.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K " wrappingWidth="197.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="284.0" layoutX="6.0" layoutY="13.0" startX="76.0" stroke="#213ddd" />
+                              <Line endX="284.0" layoutX="6.0" layoutY="31.0" startX="76.0" stroke="#213ddd" />
+                              <Text fill="#213ddd" layoutX="183.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G " wrappingWidth="154.98828125">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#213ddd" layoutX="121.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T r a n s f e r" wrappingWidth="140.00000000000006">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="transferConfirmationButton" layoutX="132.0" layoutY="263.0" mnemonicParsing="false" onAction="#validateTransfer" prefHeight="26.0" prefWidth="102.0" styleClass="buttons" text="Confirm" />
+                              <Button layoutX="308.0" layoutY="153.0" mnemonicParsing="false" onAction="#transferMoney" prefHeight="26.0" prefWidth="59.0" styleClass="buttons" text="Ok" />
+                              <TextField fx:id="transferDestinationAccount" layoutX="176.0" layoutY="113.0" prefHeight="26.0" prefWidth="190.0" promptText="Enter Destination Account" styleClass="textFields" />
+                              <Text fill="#213ddd" layoutX="21.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receiver Details" />
+                              <VBox layoutX="14.0" layoutY="179.0" prefHeight="68.0" prefWidth="77.0">
+                                 <children>
+                                    <Label text="Name    :" textFill="GREY">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" text="Surname:" textFill="GREY">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="42.0" text="Account :" textFill="GREY">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="94.0" layoutY="179.0" prefHeight="68.0" prefWidth="203.0">
+                                 <children>
+                                    <Label fx:id="transferName" textFill="#53f5dd">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="transferLastName" textFill="#53f5dd">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="transferAccount" textFill="#53f5dd">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children></Pane>
+                  <Pane fx:id="deactivateCardPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane layoutX="63.0" layoutY="34.0" prefHeight="394.0" prefWidth="382.0" style="-fx-background-color: #fff;" styleClass="deactivationPane">
+                           <children>
+                              <TextField fx:id="deactivateAcc" layoutX="14.0" layoutY="113.0" prefHeight="26.0" prefWidth="182.0" promptText="Enter Account Number" styleClass="textFields" />
+                              <PasswordField fx:id="deactivationPin" layoutX="204.0" layoutY="113.0" prefHeight="26.0" prefWidth="90.0" promptText="pin" styleClass="textFields" />
+                              <Text fill="#213ddd" layoutX="93.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K " wrappingWidth="197.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="284.0" layoutX="6.0" layoutY="13.0" startX="76.0" stroke="#213ddd" />
+                              <Line endX="284.0" layoutX="6.0" layoutY="31.0" startX="76.0" stroke="#213ddd" />
+                              <Text fill="#213ddd" layoutX="183.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G " wrappingWidth="154.98828125">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#db2121" layoutX="18.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A c o u n t  D e a c t i v a t i o n " wrappingWidth="347.00000000000006">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Button id="deactivationConfirm" fx:id="deactivationConfirm" layoutX="260.0" layoutY="354.0" mnemonicParsing="false" onAction="#deactivationAlertDialogue" prefHeight="26.0" prefWidth="106.0" styleClass="buttons" text="Confirm" />
+                              <Button fx:id="deactivationCancel" layoutX="18.0" layoutY="354.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="26.0" prefWidth="90.0" styleClass="buttons" text="Cancel" />
+                              <Button fx:id="deactivationOk" layoutX="310.0" layoutY="113.0" mnemonicParsing="false" onAction="#deactivationAccountVerification" prefHeight="26.0" prefWidth="55.0" styleClass="buttons" text="OK" />
+                              <Text fill="#213ddd" layoutX="18.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your account has: $" />
+                              <Label fx:id="accountBalance" layoutX="155.0" layoutY="149.0" prefHeight="16.0" prefWidth="140.0" text="Label" />
+                              <TextField fx:id="deactivateTransferAcc" layoutX="117.0" layoutY="225.0" prefHeight="26.0" prefWidth="90.0" promptText="Receiver Account Number" styleClass="textFields" />
+                              <Text fill="RED" layoutX="125.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="after deactivation" />
+                              <Text fill="RED" layoutX="15.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You wont be able to access money left in the account" wrappingWidth="352.9999999999999" />
+                              <RadioButton fx:id="withdrawRadio" layoutX="24.0" layoutY="185.0" mnemonicParsing="false" selected="true" text="Withdral">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="withdral_transfer" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <TextField fx:id="deactivateWithdrawField" layoutX="119.0" layoutY="181.0" prefHeight="26.0" prefWidth="182.0" promptText="Enter Amount" styleClass="textFields" />
+                              <Button fx:id="deWithdrawOk" layoutX="317.0" layoutY="181.0" mnemonicParsing="false" onAction="#deactivateWithdrawal" prefHeight="26.0" prefWidth="48.0" styleClass="buttons" text="ok" />
+                              <RadioButton fx:id="transferRadio" layoutX="24.0" layoutY="229.0" mnemonicParsing="false" text="Transfer" toggleGroup="$withdral_transfer" />
+                              <Button fx:id="deTransferOk" layoutX="320.0" layoutY="225.0" mnemonicParsing="false" onAction="#deactivationTransferMoney" prefHeight="26.0" prefWidth="48.0" styleClass="buttons" text="ok" />
+                              <TextField fx:id="deactivateTransferAmt" layoutX="217.0" layoutY="225.0" prefHeight="26.0" prefWidth="90.0" promptText="Amount" styleClass="textFields" />
+                              <VBox layoutX="118.0" layoutY="262.0" prefHeight="55.0" prefWidth="64.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="187.0" layoutY="262.0" prefHeight="55.0" prefWidth="102.0">
+                                 <children>
+                                    <Label fx:id="deName">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="deLastName" layoutX="10.0" layoutY="10.0">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="deAccount" layoutX="10.0" layoutY="26.0">
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Button fx:id="deTransferVerify" layoutX="288.0" layoutY="278.0" mnemonicParsing="false" onAction="#DeactivationValidateTransfer" prefHeight="26.0" prefWidth="77.0" styleClass="buttons" text="Verify" />
+                           </children>
+                        </Pane>
+                     </children></Pane>
+                  <Pane fx:id="bankStatementPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane layoutX="15.0" layoutY="14.0" prefHeight="436.0" prefWidth="470.0" style="-fx-background-color: #fff;" styleClass="panes">
+                           <children>
+                              <Text fill="#213ddd" layoutX="115.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K " wrappingWidth="197.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="284.0" layoutX="28.0" layoutY="25.0" startX="76.0" stroke="#213ddd" />
+                              <Line endX="284.0" layoutX="28.0" layoutY="43.0" startX="76.0" stroke="#213ddd" />
+                              <Text fill="#213ddd" layoutX="205.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G " wrappingWidth="154.98828125">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <ScrollPane layoutX="27.0" layoutY="88.0" prefHeight="274.0" prefWidth="418.0" styleClass="table-view">
+                                 <content>
+                                    <TableView fx:id="transactionTable" prefHeight="272.0" prefWidth="416.0">
+                                      <columns>
+                                        <TableColumn fx:id="dateColumn" prefWidth="122.0" styleClass="column" text="Date" />
+                                        <TableColumn fx:id="referenceNumberColumn" prefWidth="96.0" styleClass="column" text="Referece#" />
+                                          <TableColumn fx:id="transactionTypeColumn" prefWidth="99.0" styleClass="column" text="Type" />
+                                          <TableColumn fx:id="transactionAmount" prefWidth="97.0" styleClass="column" text="Amount" />
+                                      </columns>
+                                    </TableView>
+                                 </content>
+                              </ScrollPane>
+                              <ComboBox fx:id="months" layoutX="184.0" layoutY="382.0" prefWidth="150.0" promptText="Secect Month" styleClass="comboBox" />
+                              <Button layoutX="355.0" layoutY="382.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="90.0" styleClass="buttons" text="Search" />
+                           </children>
+                        </Pane>
+                     </children></Pane>
+                  <Pane fx:id="withdrawPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane fx:id="rrr" layoutX="63.0" layoutY="125.0" onMouseClicked="#test" prefHeight="213.0" prefWidth="382.0" style="-fx-background-color: red;" styleClass="panes">
+                           <children>
+                              <TextField fx:id="withdrawAmountTextField" layoutX="14.0" layoutY="113.0" prefHeight="26.0" prefWidth="197.0" promptText="Enter amount" styleClass="textFields" />
+                              <PasswordField fx:id="withdrawPinVerification" layoutX="236.0" layoutY="113.0" prefHeight="26.0" prefWidth="102.0" promptText="pin" styleClass="textFields" />
+                              <Text fill="#213ddd" layoutX="93.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R E A P E R . T E K  B A N K " wrappingWidth="197.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="284.0" layoutX="6.0" layoutY="13.0" startX="76.0" stroke="#213ddd" />
+                              <Line endX="284.0" layoutX="6.0" layoutY="31.0" startX="76.0" stroke="#213ddd" />
+                              <Text fill="#213ddd" layoutX="183.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A L W A Y S  E V O L V I N G " wrappingWidth="154.98828125">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#213ddd" layoutX="116.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W i t h d r a w" wrappingWidth="150.0">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="236.0" layoutY="159.0" mnemonicParsing="false" onAction="#withdrawMoney" prefHeight="26.0" prefWidth="102.0" styleClass="buttons" text="Confirm" />
+                              <Button layoutX="14.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" styleClass="buttons" text="Cancel" />
+                           </children>
+                        </Pane>
+                     </children></Pane>
+                  <Pane fx:id="welcomePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#213ddd" layoutX="123.0" layoutY="207.0" stroke="#213ddd" strokeType="OUTSIDE" strokeWidth="0.0" text="W E L C O M E" wrappingWidth="261.0">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#213ddd" layoutX="63.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T O  R E A P E R . T E K  B A N K " wrappingWidth="381.9999999999999">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="register" layoutX="55.0" layoutY="313.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="54.0" prefWidth="178.0" styleClass="buttons" text="Register" />
+                        <Button fx:id="login" layoutX="269.0" layoutY="313.0" mnemonicParsing="false" onAction="#paneArrangement" prefHeight="54.0" prefWidth="178.0" styleClass="buttons" text="Login" />
+                        <Text layoutX="142.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D e s i g n e d  b y  Mpumelelo Dube">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
