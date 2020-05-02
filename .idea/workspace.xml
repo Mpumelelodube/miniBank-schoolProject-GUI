@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +96,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -202,9 +206,48 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/schoolBankProject" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="491" y="109" width="374" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1588090950652">
@@ -219,26 +262,26 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="461" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1588172603849" />
-    <state width="1320" height="170" key="GridCell.Tab.0.bottom" timestamp="1588276421747">
+    <state width="1320" height="170" key="GridCell.Tab.0.bottom" timestamp="1588317647592">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="170" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588276421747" />
-    <state width="1320" height="170" key="GridCell.Tab.0.center" timestamp="1588276421746">
+    <state width="1320" height="170" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588317647592" />
+    <state width="1320" height="170" key="GridCell.Tab.0.center" timestamp="1588317647591">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="170" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1588276421746" />
-    <state width="1320" height="170" key="GridCell.Tab.0.left" timestamp="1588276421746">
+    <state width="1320" height="170" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1588317647591" />
+    <state width="1320" height="170" key="GridCell.Tab.0.left" timestamp="1588317647590">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="170" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1588276421746" />
-    <state width="1320" height="170" key="GridCell.Tab.0.right" timestamp="1588276421746">
+    <state width="1320" height="170" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1588317647590" />
+    <state width="1320" height="170" key="GridCell.Tab.0.right" timestamp="1588317647591">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="170" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588276421746" />
-    <state x="166" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1588065540960">
+    <state width="1320" height="170" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588317647591" />
+    <state x="166" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1588429297854">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="166" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588065540960" />
+    <state x="166" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588429297854" />
     <state x="343" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1588253773965">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
